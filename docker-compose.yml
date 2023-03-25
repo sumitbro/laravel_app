@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 services:
   
   #Laravel Service
@@ -49,8 +49,8 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - dbdata: /var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/my.cnf
+      - dbdata:/var/lib/mysql/
+      
     networks:
       - app-network
 
