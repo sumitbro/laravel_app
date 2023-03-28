@@ -54,8 +54,10 @@ docker-compose up -d
 ```
 docker ps
 ```
+![laravelapp](https://user-images.githubusercontent.com/49742337/228208716-d3339880-c160-4775-88bf-3cd54bbc1075.PNG)
 
-You’ll now use docker-compose exec to set the application key for the Laravel application. The docker-compose exec command allows you to run specific commands in containers.
+
+ Use docker-compose exec to set the application key for the Laravel application. The docker-compose exec command allows you to run specific commands in containers.
 
 The following command will generate a key and copy it to your .env file, ensuring that your user sessions and encrypted data remain secure:
 ```
