@@ -21,11 +21,10 @@ c. MY SQL: It pulls the mysql:5.7.22 image from Docker and defines a few environ
 ```
 
 ### Creating a Dockerfile
-```
 Dockerfile includes instructions that Docker can use to build custom Docker images. It can also install the software required and configure the necessary settings for my application. They specify the environment inside a container that will host your application code. 
 
 The Dockerfile creates an image on top of the php:7.2-fpm Docker image. This is a Debian-based image that has the PHP FastCGI implementation PHP-FPM installed. The file also installs the prerequisite packages for Laravel: mcrypt, pdo_mysql, mbstring, and imagick with composer.
-```
+
 ### Configuring Nginx
 ```
 To configure Nginx, I create an app.conf file with the service configuration in the /nginx/conf.d/ folder.
